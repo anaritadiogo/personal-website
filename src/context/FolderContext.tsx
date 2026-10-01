@@ -15,7 +15,7 @@ export const folderColors: Record<string, string> = {
   photography: '#d4a8a0',
   postcards: '#c9a8a8',
   projects: '#d4a878',
-  contact: '#c9a090',
+  email: '#c9a090',
 }
 
 export function FolderProvider({ children }: { children: ReactNode }) {

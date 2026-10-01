@@ -16,8 +16,5 @@
     "ui": "@/components/ui",
     "lib": "@/lib",
     "hooks": "@/hooks"
-  },
-  "registries": {
-    "@fancy": "https://fancycomponents.dev/r"
   }
 }

@@ -15,7 +15,7 @@ const FOLDER_ITEMS: FolderItem[] = [
   { id: 'photography', label: 'Photography', number: '02', bgColor: '#d4a8a0' },
   { id: 'postcards', label: 'Postcards', number: '03', bgColor: '#c9a8a8' },
   { id: 'projects', label: 'Projects', number: '04', bgColor: '#d4a878' },
-  { id: 'contact', label: 'Contact', number: '05', bgColor: '#c9a090' },
+  { id: 'email', label: 'Email', number: '05', bgColor: '#c9a090' },
 ]
 
 // Paper grain SVG pattern
