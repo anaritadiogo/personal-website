@@ -76,6 +76,7 @@ export default function FolderSidebar() {
         .folder-tab {
           --shape: none;
           --shape-on: none;
+          --tab-color: #ccc;
         }
         .folder-tab::after {
           content: '';
@@ -85,13 +86,13 @@ export default function FolderSidebar() {
           bottom: -16px;
           left: 0;
           right: -7px;
-          background-color: inherit;
+          background-color: var(--tab-color);
           background-image: url("${GRAIN_SVG}");
           background-repeat: repeat;
           background-size: 160px 160px;
           background-attachment: fixed;
           clip-path: var(--shape, none);
-          transition: clip-path 500ms cubic-bezier(0.22, 1, 0.36, 1);
+          transition: clip-path 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 0s;
         }
         .folder-tab[data-selected="true"]::after {
           clip-path: var(--shape-on, none);
@@ -146,7 +147,9 @@ export default function FolderSidebar() {
               style={{
                 marginLeft: 'calc(100% - 1px)',
                 padding: '28px 15px 28px 10px',
-                backgroundColor: folder.bgColor,
+                backgroundColor: 'transparent',
+                // @ts-ignore
+                '--tab-color': folder.bgColor,
                 color: '#2a2b29',
                 fontSize: '13px',
                 fontWeight: 500,
