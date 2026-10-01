@@ -22,6 +22,7 @@ export default function Navigation() {
           <Link
             href="/"
             className="text-2xl font-bold text-[#d4a574] hover:text-[#e8c8a0] transition-colors"
+            style={{ fontFamily: 'var(--font-jetbrains-mono)' }}
           >
             ARD
           </Link>
@@ -33,6 +34,7 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 className="text-[#e8e4df] hover:text-[#d4a574] transition-colors font-medium text-sm tracking-wide"
+                style={{ fontFamily: 'var(--font-jetbrains-mono)' }}
               >
                 {link.label}
               </Link>
@@ -71,6 +73,7 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 className="text-[#e8e4df] hover:text-[#d4a574] transition-colors font-medium"
+                style={{ fontFamily: 'var(--font-jetbrains-mono)' }}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
