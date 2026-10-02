@@ -1,12 +1,12 @@
 "use client"
 
 import { ReactNode } from "react";
-import ClickQuantum from "@/components/ClickQuantum";
+import ClickRipple from "@/components/ClickRipple";
 
 export default function LayoutClient({ children }: { children: ReactNode }) {
   return (
-    <ClickQuantum>
+    <ClickRipple>
       {children}
-    </ClickQuantum>
+    </ClickRipple>
   );
 }

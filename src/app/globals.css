@@ -99,6 +99,32 @@ body {
   line-height: 1.6;
 }
 
+.click-ripple-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.click-ripple {
+  position: fixed;
+  transform: translate(-50%, -50%) scale(0);
+  border: solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  animation: click-ripple-expand 950ms ease-out forwards;
+}
+
+@keyframes click-ripple-expand {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
