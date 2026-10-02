@@ -138,8 +138,8 @@ export default function Home() {
       >
         <div className="flex justify-center gap-4">
           <a href="https://linkedin.com/in/anaritadiogo" target="_blank" rel="noopener noreferrer" className="text-xs hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}><DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>linkedin</DrawablyUnderline></a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}><DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>github</DrawablyUnderline></a>
-          <a href="mailto:contact@example.com" className="text-xs hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}><DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>email</DrawablyUnderline></a>
+          <a href="https://github.com/anaritadiogo" target="_blank" rel="noopener noreferrer" className="text-xs hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}><DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>github</DrawablyUnderline></a>
+          <a href="mailto:rita.i.diogo@gmail.com" className="text-xs hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}><DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>email</DrawablyUnderline></a>
         </div>
       </motion.footer>
     </div>
