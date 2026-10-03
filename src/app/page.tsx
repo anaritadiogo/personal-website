@@ -14,6 +14,7 @@ type ComingSoonPosition = {
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
+  const [isLeaving, setIsLeaving] = useState(false)
   const [comingSoonPosition, setComingSoonPosition] = useState<ComingSoonPosition | null>(null)
   const prefersReducedMotion = useReducedMotion()
   const textReveal: Variants = {
@@ -53,8 +54,26 @@ export default function Home() {
     })
   }
 
+  const openPostcards = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+
+    if (prefersReducedMotion) {
+      window.location.assign("/postcards")
+      return
+    }
+
+    setIsLeaving(true)
+  }
+
   const pageContent = (
-    <div className="flex flex-col min-h-screen">
+    <motion.div
+      className="flex min-h-screen flex-col"
+      animate={isLeaving ? { opacity: 0, y: -16 } : { opacity: 1, y: 0 }}
+      transition={{ duration: prefersReducedMotion ? 0 : 0.45, ease: "easeInOut" }}
+      onAnimationComplete={() => {
+        if (isLeaving) window.location.assign("/postcards")
+      }}
+    >
       <motion.div
         className="absolute top-30 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-6 items-center"
         initial="hidden"
@@ -75,7 +94,7 @@ export default function Home() {
         </motion.div>
         <motion.div className="flex gap-6" variants={textReveal}>
           <button id="photography" onClick={showComingSoon} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>photography</button>
-          <button id="postcards" onClick={showComingSoon} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>postcards</button>
+          <a id="postcards" href="/postcards" onClick={openPostcards} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}>postcards</a>
         </motion.div>
       </motion.div>
       {comingSoonPosition !== null && (
@@ -142,7 +161,7 @@ export default function Home() {
           <a href="mailto:rita.i.diogo@gmail.com" className="text-xs hover:opacity-70 transition-opacity" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}><DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>email</DrawablyUnderline></a>
         </div>
       </motion.footer>
-    </div>
+    </motion.div>
   )
 
   return pageContent;
