@@ -218,9 +218,13 @@ button, a {
   background-image: var(--card-gradient);
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
   color: white;
-  cursor: zoom-in;
+  cursor: grab;
   text-align: left;
   transition: opacity 0.18s ease;
+}
+
+.postcard-wall-card:active {
+  cursor: grabbing;
 }
 
 .postcard-wall-card-photo {
@@ -335,4 +339,16 @@ button, a {
   html {
     @apply font-sans;
   }
+}
+
+/* Global text selection */
+::selection {
+  background: #c97b86; /* Highlight background color */
+  color: #000000;     /* Highlight text color */
+}
+
+/* Firefox specific prefix */
+::-moz-selection {
+  background: #c97b86;
+  color: #000000;
 }
