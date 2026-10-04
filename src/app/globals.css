@@ -187,6 +187,110 @@ button, a {
   display: none;
 }
 
+.postcard-wall-container {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.postcard-wall {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  height: var(--desktop-height);
+}
+
+.postcard-wall-card {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  left: var(--desktop-left);
+  top: var(--desktop-top);
+  width: var(--desktop-width);
+  height: var(--desktop-card-height);
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: 1px;
+  background-color: var(--card-colour);
+  background-image: var(--card-gradient);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
+  color: white;
+  cursor: zoom-in;
+  text-align: left;
+  transition: opacity 0.18s ease;
+}
+
+.postcard-wall-card-photo {
+  border: 5px solid #f7f7f4;
+}
+
+.postcard-wall-card:focus-visible {
+  z-index: 1;
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.postcard-wall-card:hover .postcard-wall-chip,
+.postcard-wall-card:focus-visible .postcard-wall-chip {
+  opacity: 1;
+}
+
+.postcard-wall-chip {
+  position: absolute;
+  left: 5px;
+  max-width: calc(100% - 10px);
+  overflow: hidden;
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: rgba(246, 247, 248, 0.93);
+  color: #1a2027;
+  font-size: 11px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease;
+}
+
+.postcard-wall-chip-number {
+  top: 5px;
+  font-family: var(--font-jetbrains-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.postcard-wall-chip-location {
+  bottom: 5px;
+  font-weight: 500;
+}
+
+.postcard-wall-sentinel {
+  height: 1px;
+}
+
+@media (max-width: 639px) {
+  .postcard-wall {
+    height: var(--mobile-height);
+  }
+
+  .postcard-wall-card {
+    left: var(--mobile-left);
+    top: var(--mobile-top);
+    width: var(--mobile-width);
+    height: var(--mobile-card-height);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .postcard-wall-card,
+  .postcard-wall-chip {
+    transition: none;
+  }
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
