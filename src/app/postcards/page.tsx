@@ -1,14 +1,12 @@
 "use client"
 
-import { X } from "lucide-react"
-import { drawablyButton } from "drawably"
+import { drawablyButton, drawablyCard, drawablyCircle } from "drawably"
 import { motion, useReducedMotion } from "motion/react"
 import Link from "next/link"
 import { createPortal } from "react-dom"
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type MouseEvent } from "react"
 import postcardCatalogue from "@/data/postcards.json"
-import PostcardWall, { PostcardArtwork, PostcardCardFace, type Postcard } from "@/components/PostcardWall"
-import { postcardDimensions } from "@/lib/postcard-layout"
+import PostcardWall, { PostcardCardFace, type Postcard } from "@/components/PostcardWall"
 import "drawably/style.css"
 
 const postcards: Postcard[] = postcardCatalogue
@@ -29,8 +27,10 @@ function boxOf(element: HTMLElement): Box {
 }
 
 function centeredBox(): Box {
-  const width = Math.min(window.innerWidth * 0.9, 560)
-  const height = Math.min(window.innerHeight * 0.8, 640)
+  const maxWidth = Math.min(window.innerWidth * 0.9, 560)
+  const maxHeight = Math.min(window.innerHeight * 0.8, 640)
+  const width = Math.min(maxWidth, maxHeight * 7 / 5)
+  const height = width * 5 / 7
   return {
     width,
     height,
@@ -45,9 +45,11 @@ export default function Postcards() {
   const [portalHost, setPortalHost] = useState<HTMLElement | null>(null)
   const isActive = active !== null
   const homeLinkRef = useRef<HTMLAnchorElement>(null)
+  const backOutlineRef = useRef<HTMLDivElement>(null)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const overlayRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const closeMarkRef = useRef<HTMLSpanElement>(null)
   const pendingFocusRef = useRef<HTMLButtonElement | null>(null)
   const closeTimeoutRef = useRef<number | null>(null)
   const prefersReducedMotion = useReducedMotion()
@@ -80,6 +82,20 @@ export default function Postcards() {
     const sketch = drawablyButton(homeLink, { variant: "outline" })
     return () => sketch.destroy()
   }, [])
+
+  useEffect(() => {
+    const outline = backOutlineRef.current
+    if (!outline) return
+    const sketch = drawablyCard(outline, { stroke: "#ffffff", width: 1.5, roughness: 0.8 })
+    return () => sketch.destroy()
+  }, [isActive])
+
+  useEffect(() => {
+    const closeMark = closeMarkRef.current
+    if (!closeMark) return
+    const sketch = drawablyCircle(closeMark, { stroke: "#ffffff", width: 1, roughness: 0.8, boil: 0.3 })
+    return () => sketch.destroy()
+  }, [isActive])
 
   useEffect(() => {
     if (active === null && pendingFocusRef.current) {
@@ -258,35 +274,46 @@ export default function Postcards() {
           </div>
           <div
             aria-hidden={active.phase !== "open"}
-            className="absolute inset-0 overflow-y-auto border border-white bg-black p-3 text-white shadow-[8px_9px_0_white] sm:p-5"
+            className="postcard-modal-back absolute inset-0 overflow-hidden bg-black text-white"
             style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
           >
+            <div className="postcard-modal-content absolute inset-0 overflow-y-auto text-white">
+              <div className="flex min-h-full flex-col gap-4">
+                <header>
+                  <h2 className="text-2xl font-semibold" style={{ fontFamily: "var(--font-instrument-serif)" }}>
+                    {active.postcard.title || "untitled"}
+                  </h2>
+                  <p className="text-sm text-white/70">{active.postcard.location}</p>
+                </header>
+                <p className="text-sm leading-relaxed">
+                  date bought: {active.postcard.date}
+                  <br />
+                  acquired at: {active.postcard.store}
+                </p>
+                <div className="space-y-3 text-sm leading-relaxed text-white/85">
+                  <p>{active.postcard.description}</p>
+                </div>
+                <div className="space-y-3 text-sm leading-relaxed text-white/85">
+                  <p>{active.postcard.history}</p>
+                </div>
+                <div className="space-y-3 text-sm leading-relaxed text-gray-500">
+                  <p>{active.postcard.note}</p>
+                </div>
+              </div>
+            </div>
             <button
               ref={closeButtonRef}
               type="button"
               onClick={closePostcard}
               tabIndex={active.phase === "open" ? 0 : -1}
-              className="absolute right-3 top-3 z-10 border border-white bg-black p-2 text-white outline-offset-2 focus-visible:outline-2 focus-visible:outline-white"
+              className="postcard-modal-close z-10 text-white outline-offset-2 focus-visible:outline-2 focus-visible:outline-white"
               aria-label="Close postcard"
             >
-              <X size={16} />
+              <span ref={closeMarkRef} className="postcard-modal-close-mark" aria-hidden="true">
+                <span className="postcard-modal-close-glyph">×</span>
+              </span>
             </button>
-            <div
-              className="mx-auto max-h-[42vh] overflow-hidden border border-white"
-              style={{ aspectRatio: `${postcardDimensions(active.postcard).w} / ${postcardDimensions(active.postcard).h}` }}
-            >
-              <PostcardArtwork postcard={active.postcard} expanded />
-            </div>
-            <div className="flex items-end justify-between gap-4 pt-4">
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-white/65">postcard {String(active.postcard.catalogue).padStart(3, "0")}</p>
-                <h2 className="text-3xl italic" style={{ fontFamily: "var(--font-instrument-serif)" }}>
-                  {active.postcard.title || "untitled"} · {active.postcard.location}
-                </h2>
-              </div>
-              <p className="text-xs text-white/65">{active.postcard.size} · {active.postcard.orientation}</p>
-            </div>
-            <p className="pt-4 text-sm text-white/75">Expanded postcard details will go here.</p>
+            <div ref={backOutlineRef} aria-hidden="true" className="postcard-modal-outline" />
           </div>
         </div>
       </div>

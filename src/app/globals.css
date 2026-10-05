@@ -223,6 +223,10 @@ button, a {
   transition: opacity 0.18s ease;
 }
 
+.postcard-wall-card-image {
+  background: transparent;
+}
+
 .postcard-wall-card:active {
   cursor: grabbing;
 }
@@ -317,6 +321,72 @@ button, a {
 
 .postcard-wall-sentinel {
   height: 1px;
+}
+
+.postcard-modal-outline.drawably-card {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.postcard-modal-back {
+  border-radius: 12px;
+}
+
+.postcard-modal-content {
+  padding: 20px 64px 20px 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.postcard-modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.postcard-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.postcard-modal-close-mark {
+  position: relative;
+  width: 14px;
+  height: 11.5px;
+}
+
+.postcard-modal-close-glyph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.postcard-modal-close-mark.drawably-host .postcard-modal-close-glyph {
+  font-family: var(--font-jetbrains-mono);
+}
+
+@media (min-width: 640px) {
+  .postcard-modal-content {
+    padding: 32px 64px;
+  }
 }
 
 @media (max-width: 639px) {

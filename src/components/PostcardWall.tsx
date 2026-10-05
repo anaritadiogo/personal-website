@@ -17,6 +17,12 @@ export type Postcard = {
   id: number
   title: string
   location: string
+  date: string
+  store: string
+  store_coordinates: string
+  description: string
+  history: string
+  note: string
   orientation: string
   size: string
   type: string
@@ -85,14 +91,15 @@ export function PostcardArtwork({ postcard, expanded = false }: { postcard: Post
       className={`relative h-full w-full overflow-hidden ${postcard.type === "photo" ? "border-[5px] border-[#f7f7f4]" : ""}`}
       style={{
         aspectRatio: `${w} / ${h}`,
-        backgroundColor: "var(--card-colour)",
-        backgroundImage: "var(--card-gradient)",
+        backgroundColor: postcard.image ? "transparent" : "var(--card-colour)",
+        backgroundImage: postcard.image ? "none" : "var(--card-gradient)",
       }}
     >
       {postcard.image ? (
         <img
           src={postcard.image}
           alt={alt}
+          draggable={false}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -265,7 +272,7 @@ export default function PostcardWall({
                     draggedCardRef.current = false
                   }, 0)
                 }}
-                className={`postcard-wall-card ${postcard.type === "photo" ? "postcard-wall-card-photo" : ""}`}
+                className={`postcard-wall-card ${postcard.image ? "postcard-wall-card-image" : ""} ${postcard.type === "photo" ? "postcard-wall-card-photo" : ""}`}
                 style={{
                   ...style,
                   zIndex: raisedCard === postcard.catalogue ? 20 : undefined,
