@@ -1,6 +1,8 @@
 "use client"
 
-import { useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from "react"
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from "react"
+import { drawablyCircle } from "drawably"
+import { DrawablyQuote } from "drawably/react"
 import { motion, useReducedMotion } from "motion/react"
 import {
   packPostcards,
@@ -106,6 +108,59 @@ export function PostcardArtwork({ postcard, expanded = false }: { postcard: Post
   )
 }
 
+export function PostcardCardFace({ postcard }: { postcard: Postcard }) {
+  return (
+    <>
+      <PostcardArtwork postcard={postcard} />
+      <PostcardLabels postcard={postcard} />
+    </>
+  )
+}
+
+function PostcardLabels({ postcard }: { postcard: Postcard }) {
+  const numberRef = useRef<HTMLSpanElement>(null)
+  const quoteTitleRef = useRef<HTMLSpanElement>(null)
+  const quoteLocationRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const number = numberRef.current
+    if (!number) return
+    const numberSketch = drawablyCircle(number, { roughness: 0.8, boil: 0.3, width: 1, stroke: "#000000" })
+    return () => numberSketch.destroy()
+  }, [])
+
+  useLayoutEffect(() => {
+    const title = quoteTitleRef.current
+    const location = quoteLocationRef.current
+    if (!title || !location) return
+
+    const syncDividerWidth = () => {
+      const text = Array.from(title.childNodes).find((node) => node.nodeType === Node.TEXT_NODE)
+      if (!text) return
+      const range = document.createRange()
+      range.selectNodeContents(text)
+      const lineWidth = Math.max(0, ...Array.from(range.getClientRects(), (rect) => rect.width))
+      location.style.width = `${lineWidth + 6}px`
+    }
+    const observer = new ResizeObserver(syncDividerWidth)
+    if (title.parentElement) observer.observe(title.parentElement)
+    syncDividerWidth()
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <>
+      <span ref={numberRef} className="postcard-wall-label postcard-wall-number">
+        {String(postcard.catalogue).padStart(3, "0")}
+      </span>
+      <DrawablyQuote className="postcard-wall-label postcard-wall-quote" roughness={0.6} boil={0.5} width={1.5} stroke="#000000">
+        <span ref={quoteTitleRef} className="postcard-wall-quote-title">{postcard.title || "untitled"}</span>
+        <footer ref={quoteLocationRef} className="postcard-wall-quote-location">{postcard.location}</footer>
+      </DrawablyQuote>
+    </>
+  )
+}
+
 function cardStyle(desktop: PostcardRect, mobile: PostcardRect, postcard: Postcard): CardStyle {
   return {
     "--desktop-left": unit(desktop.x, DESKTOP_WIDTH),
@@ -124,10 +179,12 @@ export default function PostcardWall({
   cards,
   scrollRootRef,
   onSelect,
+  hiddenCardCatalogue,
 }: {
   cards: readonly Postcard[]
   scrollRootRef: RefObject<HTMLDivElement | null>
-  onSelect: (postcard: Postcard) => void
+  onSelect: (postcard: Postcard, element: HTMLButtonElement) => void
+  hiddenCardCatalogue: number | null
 }) {
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE)
   const [raisedCard, setRaisedCard] = useState<number | null>(null)
@@ -187,7 +244,7 @@ export default function PostcardWall({
                     event.stopPropagation()
                     return
                   }
-                  onSelect(postcard)
+                  onSelect(postcard, event.currentTarget)
                 }}
                 onDragStart={() => {
                   draggedCardRef.current = true
@@ -209,7 +266,11 @@ export default function PostcardWall({
                   }, 0)
                 }}
                 className={`postcard-wall-card ${postcard.type === "photo" ? "postcard-wall-card-photo" : ""}`}
-                style={{ ...style, zIndex: raisedCard === postcard.catalogue ? 20 : undefined }}
+                style={{
+                  ...style,
+                  zIndex: raisedCard === postcard.catalogue ? 20 : undefined,
+                  visibility: hiddenCardCatalogue === postcard.catalogue ? "hidden" : "visible",
+                }}
                 aria-label={`View postcard ${postcard.catalogue}: ${title}, ${postcard.location}`}
                 drag
                 dragConstraints={scrollRootRef}
@@ -229,9 +290,7 @@ export default function PostcardWall({
                   transition: { duration: 0.2 },
                 }}
               >
-                <PostcardArtwork postcard={postcard} />
-                <span className="postcard-wall-chip postcard-wall-chip-number">{String(postcard.catalogue).padStart(3, "0")}</span>
-                <span className="postcard-wall-chip postcard-wall-chip-location">{postcard.location}</span>
+                <PostcardCardFace postcard={postcard} />
               </motion.button>
             )
           })}
