@@ -143,7 +143,7 @@ export default function Home() {
           <motion.p className="text-l md:text-m text-white font-light" variants={textReveal}>
             i'm <DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>
               ana
-            </DrawablyUnderline>. engineer, traveler, creator.
+            </DrawablyUnderline>. engineer, traveler, collector.
           </motion.p>
           <motion.p className="text-l md:text-m text-white font-light" variants={textReveal}>welcome to my corner of the internet,</motion.p>
           <motion.p className="text-l md:text-m text-white font-light" variants={textReveal}>pull up a chair, poke around.</motion.p>
