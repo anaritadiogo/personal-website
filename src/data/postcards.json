@@ -832,8 +832,8 @@
     "date": "04/03/2025",
     "store": "Signum",
     "store_coordinates": "43.76938, 11.25782",
-    "description": "Detailed watercolor illustration of an anthropomorphic tabby cat dressed in a historical Italian costume against a plain white background. The cat wears a sweeping brown and gold cloak (tabarro), a dark hood framing its feline face, and a long red coat accented with structured button details. In one paw, it holds up a traditional white Carnival mask, while a black tricorn hat (tricorno) is tucked under its arm. Elegant script at the bottom reads "Bauta - Firenze".",
-    "history": "It features a contemporary artistic rendering that celebrates classic Italian theatrical and festive traditions. The attire depicted is the Bauta, one of the most famous and historically significant disguises of the Venetian Carnival, widely worn during the 17th and 18th centuries. The ensemble was designed specifically to grant total anonymity across social classes, featuring a unique white mask (larva) shaped to let the wearer eat and talk without removing it. While the costume itself is iconic to Venice, the inscription "Firenze" (Florence) indicates its place within a broader regional art collection celebrating the historical pageantry and Commedia dell'Arte heritage of Italy. By Susan Hebert.",
+    "description": "Detailed watercolor illustration of an anthropomorphic tabby cat dressed in a historical Italian costume against a plain white background. The cat wears a sweeping brown and gold cloak (tabarro), a dark hood framing its feline face, and a long red coat accented with structured button details. In one paw, it holds up a traditional white Carnival mask, while a black tricorn hat (tricorno) is tucked under its arm. Elegant script at the bottom reads \"Bauta - Firenze\".",
+    "history": "It features a contemporary artistic rendering that celebrates classic Italian theatrical and festive traditions. The attire depicted is the Bauta, one of the most famous and historically significant disguises of the Venetian Carnival, widely worn during the 17th and 18th centuries. The ensemble was designed specifically to grant total anonymity across social classes, featuring a unique white mask (larva) shaped to let the wearer eat and talk without removing it. While the costume itself is iconic to Venice, the inscription \"Firenze\" (Florence) indicates its place within a broader regional art collection celebrating the historical pageantry and Commedia dell'Arte heritage of Italy. By Susan Hebert.",
     "note": "",
     "orientation": "vertical",
     "size": "big",
@@ -880,6 +880,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/043.png",
     "colours": [
       "pink",
       "brown",
@@ -915,7 +916,7 @@
     "store": "Bao Maison 寶物",
     "store_coordinates": "25.03269, 121.52956",
     "description": "Textured illustration showcasing an array of Taiwanese street food delicacies reimagined with adorable animal faces. In the center, a clear cup of boba milk tea features tapioca pearls shaped like tiny black rabbits. Surrounding the drink are various treats: a wheel cake (imagawayaki) cut open to reveal a sweet red bean filling with eyes, a bag of golden sweet potato balls shaped like bunnies, a piece of crispy Taiwanese fried chicken with a cat-like face, and a glossy, red strawberry tanghulu skewer on the left. The artwork uses warm, grainy textures and soft earth tones.",
-    "history": "This postcard features the work of ririkoko 梨々子々, an independent Taiwanese digital illustrator known for blending culinary art with animal motifs. The brand name ririkoko is a playful phonetic translation of the Taiwanese Hokkien phrase li-li-khou-khou (哩哩摳摳), which means "many small, miscellaneous things"—reflecting the artist's love for small daily joys and miniature collectibles. By infusing iconic Taiwanese night market treats with a distinct contemporary kawaii (cute) aesthetic, ririkoko's work epitomizes a popular 21st-century movement among young Taiwanese designers who use comforting, whimsical illustrations to celebrate, preserve, and globally export local street food heritage",
+    "history": "This postcard features the work of ririkoko 梨々子々, an independent Taiwanese digital illustrator known for blending culinary art with animal motifs. The brand name ririkoko is a playful phonetic translation of the Taiwanese Hokkien phrase li-li-khou-khou (哩哩摳摳), which means \"many small, miscellaneous things\"—reflecting the artist's love for small daily joys and miniature collectibles. By infusing iconic Taiwanese night market treats with a distinct contemporary kawaii (cute) aesthetic, ririkoko's work epitomizes a popular 21st-century movement among young Taiwanese designers who use comforting, whimsical illustrations to celebrate, preserve, and globally export local street food heritage",
     "note": "",
     "orientation": "horizontal",
     "size": "small",
@@ -1103,6 +1104,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/054.png",
     "colours": [
       "white",
       "blue",
@@ -1164,6 +1166,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/057.png",
     "colours": [
       "black",
       "yellow",
@@ -1205,6 +1208,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
+    "image": "/postcards/059.png",
     "colours": [
       "blue",
       "green",
@@ -1356,7 +1360,7 @@
     ]
   },
   {
-    "catalogue": 67,
+    "catalogue": 105,
     "id": 45,
     "title": "flowers",
     "location": "Amsterdam, Netherlands",
@@ -1471,6 +1475,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/072.png",
     "colours": [
       "black",
       "white",
@@ -2129,7 +2134,7 @@
     ]
   },
   {
-    "catalogue": 105,
+    "catalogue": 67,
     "id": 30,
     "title": "travessa",
     "location": "Macao, China",
@@ -2142,6 +2147,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/067.png",
     "colours": [
       "blue",
       "green",
