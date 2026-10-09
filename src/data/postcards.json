@@ -406,6 +406,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/020.png",
     "colours": [
       "grey",
       "white"
@@ -486,6 +487,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/024.png",
     "colours": [
       "white",
       "blue",
@@ -568,6 +570,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/028.png",
     "colours": [
       "purple",
       "yellow",
@@ -588,6 +591,7 @@
     "orientation": "horizontal",
     "size": "big",
     "type": "drawn",
+    "image": "/postcards/029.png",
     "colours": [
       "red",
       "blue",
@@ -658,7 +662,7 @@
     ]
   },
   {
-    "catalogue": 33,
+    "catalogue": 108,
     "id": 86,
     "title": "siu mai",
     "location": "Hong Kong, China",
@@ -671,6 +675,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/108.png",
     "colours": [
       "white",
       "yellow",
@@ -854,6 +859,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/042.png",
     "colours": [
       "red",
       "yellow",
@@ -1178,6 +1184,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/058.png",
     "colours": [
       "green",
       "white",
@@ -1218,6 +1225,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/060.png",
     "colours": [
       "white",
       "blue",
@@ -1258,6 +1266,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/062.png",
     "colours": [
       "orange",
       "blue",
@@ -1793,7 +1802,7 @@
     ]
   },
   {
-    "catalogue": 89,
+    "catalogue": 101,
     "id": 8,
     "title": "",
     "location": "Macao, China",
@@ -2038,7 +2047,7 @@
     ]
   },
   {
-    "catalogue": 101,
+    "catalogue": 89,
     "id": 6,
     "title": "oktoberfest",
     "location": "Munich, Germany",
@@ -2051,6 +2060,7 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
+    "image": "/postcards/089.png",
     "colours": [
       "grey",
       "green",
@@ -2180,7 +2190,7 @@
     ]
   },
   {
-    "catalogue": 108,
+    "catalogue": 33,
     "id": 61,
     "title": "recipe",
     "location": "Lisbon, Portugal",
@@ -2193,6 +2203,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/033.png",
     "colours": [
       "white",
       "black"
@@ -2208,6 +2219,7 @@
     "store_coordinates": "",
     "description": "",
     "history": "",
+  
     "note": "",
     "orientation": "vertical",
     "size": "small",
