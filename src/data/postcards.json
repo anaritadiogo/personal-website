@@ -400,9 +400,9 @@
     "date": "03/05/2024",
     "store": "National Museum",
     "store_coordinates": "59.9115, 10.72924",
-    "description": "",
-    "history": "",
-    "note": "",
+    "description": " monochrome, vintage-style pencil and charcoal illustration depicting a large, wide-eyed tabby cat walking forward along a dirt pathway. The cat's body is hunched forward in an intense, menacing posture, with its tail raised high and its mouth open to expose sharp, prominent teeth. It features prominent dark stripes across its fur and ears drawn back, emerging from a softly rendered, textured background of forest foliage and trees.",
+    "history": "This artwork is a famous 1906 drawing titled \"Så gikk kjetta langt og lenger enn langt\" (\"Then the Tabby went far, and farther than far\") by the celebrated Norwegian artist Theodor Kittelsen. It was created as a folklore illustration for the popular Norwegian fairy tale \"The Tabby who was such a Glutton\" (Kjetta som var saa gammel til å ete), published in collections by Peter Christen Asbjørnsen and Jørgen Moe. Kittelsen is highly regarded in Norway for his atmospheric and sometimes unsettling depictions of nature, fairy tales, and mythical trolls.",
+    "note": "I like to image the cat gets bigger every step it takes.",
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
@@ -508,6 +508,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/025.png",
     "colours": [
       "blue",
       "yellow",
@@ -805,7 +806,7 @@
     ]
   },
   {
-    "catalogue": 40,
+    "catalogue": 107,
     "id": 18,
     "title": "city paiting",
     "location": "Dubrovnik, Croatia",
@@ -901,6 +902,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/044.png",
     "colours": [
       "yellow",
       "orange",
@@ -941,6 +943,7 @@
     "note": "",
     "orientation": "vertical",
     "size": "small",
+    "image": "/postcards/046.png",
     "type": "drawn",
     "colours": [
       "white",
@@ -2175,7 +2178,7 @@
     ]
   },
   {
-    "catalogue": 107,
+    "catalogue": 40,
     "id": 35,
     "title": "icons",
     "location": "Hong Kong, China",
