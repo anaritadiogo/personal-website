@@ -277,12 +277,13 @@
     "date": "06/07/2026",
     "store": "unknown",
     "store_coordinates": "unknown",
-    "description": "",
-    "history": "",
+    "description": "Photograph of the Jety-Oguz rock formation in Kyrgyzstan under a bright, cloudy blue sky. A massive row of jagged red sandstone cliffs dominates the background, stretching across the frame. The foreground shows a green valley filled with tall pine trees, a traditional white yurt, and a couple of small houses.",
+    "history": "Named \"Seven Oxes\" in Kyrgyz, these rocks are tied to an ancient legend of seven bulls turned to stone by the gods to stop a tragic bloodshed. Historically, this scenic valley served as a notable passage along the Silk Road for traders crossing the Tian Shan mountains. Today, it stands as a prominent symbol of Kyrgyz national identity and traditional nomadic heritage.",
     "note": "",
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
+    "image": "/postcards/014.png",
     "colours": [
       "blue",
       "brown",
@@ -318,12 +319,13 @@
     "date": "06/11/2024",
     "store": "Sanjuroppou Kiyomizu",
     "store_coordinates": "34.99635, 135.78042",
-    "description": "",
-    "history": "",
+    "description": "Colorful, hand-drawn map of the Fushimi Inari-taisha shrine complex set against a bright yellow background. It depicts mountain trails densely packed with traditional architecture, waterfalls, cartoon white foxes, and paths lined with vibrant orange torii gates. Major landmarks and intersections are clearly marked with rectangular labels in both Japanese kanji and English.",
+    "history": "Founded in 711 AD, Fushimi Inari-taisha is the head Shinto shrine dedicated to Inari, the deity of rice, agriculture, and business prosperity. The thousands of iconic orange torii gates lining the mountain paths were donated by businesses and individuals seeking financial good fortune. This specific illustrated map is a popular tourist navigation guide distributed locally in Kyoto to help visitors hike the sacred trail.",
     "note": "",
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/016.png",
     "colours": [
       "yellow",
       "green",
@@ -333,17 +335,18 @@
   {
     "catalogue": 17,
     "id": 1,
-    "title": "Ding-ding Tram",
+    "title": "Ding Ding Tram",
     "location": "Hong Kong, China",
     "date": "30/10/2025",
     "store": "Yui Ying Framing Gallery",
     "store_coordinates": "22.27664, 114.17127",
-    "description": "",
-    "history": "",
+    "description": "Watercolor painting of a bustling city street featuring two iconic double-decker trams traveling along metal tracks. The tram on the left is a vibrant solid yellow, while the tram on the right is white with a distinct red upper deck showing passengers visible through the top windows. Pedestrians wait on the sidewalk to the right, yellow public buses are parked in the background, and a prominent green traffic light stands in the lower-left foreground.",
+    "history": "This piece belongs to a series of urban landscapes by renowned watercolor master Shen Ping, a permanently settled Hong Kong artist known for capturing local culture, busy harbors, and street life. The artwork depicts Hong Kong's famous double-decker trams, affectionately known locally as \"Ding Ding,\" which have been operating on Hong Kong Island since 1904. As the world's largest double-decker tram fleet still in service, the transit line functions as a living cultural symbol of the city's urban heritage. Ping's signature unrestrained brushstrokes beautifully document the nostalgic charm of these traditional vehicles navigating the fast-paced, modern development of Hong Kong.",
     "note": "",
     "orientation": "horizontal",
     "size": "big",
     "type": "drawn",
+    "image": "/postcards/017.png",
     "colours": [
       "white",
       "red",
@@ -379,8 +382,8 @@
     "date": "05/11/2025",
     "store": "來好 LAI HAO 凱撒二店",
     "store_coordinates": "25.04619, 121.51642",
-    "description": "",
-    "history": "",
+    "description": "Vintage printed illustration of a flag waving on a silver pole with a golden finial, set against a plain, off-white background. The flag features a vibrant red field with a dark blue canton in the upper-left corner, which contains a sharp white sun with 12 rays. Printed text at the bottom left reads \"102. The Naval Flag of the Chinese Republic,\" while the corresponding traditional Chinese characters (中華民國海軍旗) appear at the bottom right.",
+    "history": "The image illustrates the national flag of the Republic of China (ROC), historically designated in early 20th-century military charts as the naval jack or naval flag before becoming the official national flag in 1928. Designed by Sun Yat-sen and Lu Haodong, the colors represent the Three Principles of the People: blue for nationalism and liberty, white for democracy and equality, and red for livelihood and fraternity, with the 12 rays symbolizing the hours of the day and months of the year. This specific document is a historical print or postcard from the Republican era used to document and publicize the state symbols of the newly established republic to domestic and international audiences.",
     "note": "",
     "orientation": "horizontal",
     "size": "small",
@@ -441,12 +444,13 @@
     "date": "05/10/2023",
     "store": "Aux Vieux Pignon",
     "store_coordinates": "48.0761, 7.35846",
-    "description": "",
-    "history": "",
+    "description": "This watercolor painting by Georges Ratkoff depicts a nostalgic, snow-covered street corner in Colmar, France, featuring traditional warm-toned half-timbered houses with steep, white-blanketed roofs. In the foreground, 19th-century pedestrians and a horse-drawn carriage pass a glowing street lamp and an arched storefront labeled \"Cellier du Koïfhus.\"",
+    "history": "The artwork illustrates the historical charm of Colmar in the Alsace region, specifically referencing the Koïfhus (Old Custom House), a 15th-century hub of regional trade. The creator, French artist Georges Ratkoff, spent decades capturing these idyllic, folkloric winter landscapes to celebrate and preserve traditional Alsatian culture.",
     "note": "",
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/022.png",
     "colours": [
       "orange",
       "white",
@@ -458,15 +462,16 @@
     "id": 58,
     "title": "Suite de Fados",
     "location": "Lisbon, Portugal",
-    "date": "",
+    "date": "unknown",
     "store": "A Vida Portuguesa",
     "store_coordinates": "38.7101, -9.1392",
-    "description": "",
-    "history": "",
+    "description": "This is the illustrated cover of a vintage sheet music booklet set against a vibrant yellow background, created by modernist artist Stuart de Carvalhais (signed as STVAR on the left). The central drawing shows a man in a green jacket and flat cap sitting on a red wooden stool playing a Portuguese guitar, while a woman draped in a traditional black shawl leans over his shoulder. The stylized typography at the top reads \"Suite de Fados\" and \"One Step,\" with the composer's name, Silva Negrão, written in the center and the [Sassetti & C.ª Editores] logo at the bottom.",
+    "history": "This cover was designed in the early 20th century for a piano arrangement by maestro Silva Negrão, published by the prominent Lisbon house [Sassetti]. The piece reflects a unique cultural crossover of the 1910s and 1920s, merging the soulful melodies of Portuguese fado with the upbeat rhythm of the American one-step dance craze sweeping Europe. The illustrator, [Stuart de Carvalhais], was a pioneering Portuguese caricaturist, and his iconic imagery here remains an enduring visual symbol of classic Lisbon fado culture.",
     "note": "",
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/023.png",
     "colours": [
       "yellow",
       "red",
@@ -476,13 +481,13 @@
   {
     "catalogue": 24,
     "id": 9,
-    "title": "painting",
+    "title": "Church of Our Lady of Remedy",
     "location": "Kotor, Montenegro",
     "date": "12/06/2025",
     "store": "Tanja Top Art",
     "store_coordinates": "42.42554, 18.77066",
-    "description": "",
-    "history": "",
+    "description": "This is a vibrant watercolor painting depicting a panoramic view of a coastal town, with the handwritten word \"Kotor\" in the top right corner. The right foreground features a prominent white church bell tower with a domed roof and cross, surrounded by orange-roofed houses and lush green trees. In the background, a bright blue bay stretches toward towering mountains painted in shades of blue and purple under a clear sky.",
+    "history": "The artwork depicts the historic town of Kotor in Montenegro, famous for its well-preserved medieval old town and its UNESCO-protected bay. The tower represents the Church of Our Lady of Remedy, built in 1518 on the mountain slopes by plague survivors, making it a landmark along the steep path to Saint John's Fortress. This contemporary urban watercolor sketch beautifully captures the dramatic natural landscape where the rugged Balkan mountains meet the Adriatic Sea.",
     "note": "",
     "orientation": "horizontal",
     "size": "small",
@@ -497,13 +502,13 @@
   {
     "catalogue": 25,
     "id": 82,
-    "title": "casino",
+    "title": "Oil painting of Prala de Ferreira do Amaral, Macao",
     "location": "Macao, China",
     "date": "28/10/2025",
     "store": "IPOR Livraria Portuguesa e Galeria de Arte",
     "store_coordinates": "22.19432, 113.54153",
-    "description": "",
-    "history": "",
+    "description": "Impasto oil painting by Ada Zhang capturing the Macau skyline under a soft blue sky. The center is dominated by the golden, towering Grand Lisboa hotel with its distinctive lotus-flower shape, flanked on the left by a dark purple skyscraper illuminated by yellow window lights. The foreground features a sweeping road and roundabout rendered with thick, expressive brushstrokes of purple, grey, and brown paint.",
+    "history": "The artwork depicts Ferreira do Amaral Square in Macau, with the background showcasing the iconic Grand Lisboa casino-hotel opened in 2007. The building's unique design honors the lotus flower, the official floral emblem of Macau since its sovereignty transfer from Portugal to China in 1999. Contemporary artist Ada Zhang (張洪) utilizes a heavy oil texture to document the high-energy urban dynamism and opulence defining modern Macau.",
     "note": "",
     "orientation": "vertical",
     "size": "small",
@@ -560,13 +565,13 @@
   {
     "catalogue": 28,
     "id": 94,
-    "title": "kids",
+    "title": "Viennese specialities",
     "location": "Vienna, Austria",
     "date": "11/12/2022",
     "store": "Hofburgstüberl",
     "store_coordinates": "48.20673, 16.36485",
-    "description": "",
-    "history": "",
+    "description": "Hand-colored promotional illustration featuring classic Austrian treats against a textured pink background with a yellow border. The top showcases an \"Einspänner\" coffee in a tall glass topped with whipped cream, the middle displays a \"Melange\" coffee served on a silver tray with water and sugar cubes, and the bottom highlights a slice of \"Sachertorte\" chocolate cake complete with whipped cream and a small fork.",
+    "history": "Artwork was created by Martina Nieß as part of the official \"Vienna is different\" (Wien ist anders) marketing campaign, a long-running promotional initiative designed to highlight the capital's unique charm, humor, and cultural quirks. The piece celebrates Vienna's UNESCO-recognized coffeehouse culture, featuring the driver-historied Einspänner, the classic Melange, and the famous Sachertorte invented in 1832. Through its approachable graphic style, the illustration effectively uses traditional culinary staples to capture the distinct, welcoming lifestyle that sets Vienna apart for international travelers.",
     "note": "",
     "orientation": "vertical",
     "size": "small",
@@ -581,13 +586,13 @@
   {
     "catalogue": 29,
     "id": 2,
-    "title": "city cartoon",
+    "title": "Amsterdam",
     "location": "Amsterdam, Netherlands",
     "date": "15/09/2024",
     "store": "SPAR city Amsterdam Byzantium",
     "store_coordinates": "52.36182, 4.88103",
-    "description": "",
-    "history": "",
+    "description": "vibrant, cartoon-style postcard illustration of Amsterdam set against a bustling canal backdrop with clear blue skies. The scene showcases rows of traditional Dutch canal houses with distinctive stepped, spout, and neck gables, while a crowded arched bridge spans across the water. The canals and streets are packed to the brim with humorous details, including numerous tour boats, a capsizing vessel, chaotic crowds, and a mouse floating away on an orange balloon in the top-left corner.",
+    "history": "The artwork is a highly detailed, comical illustration by renowned Dutch cartoonist Frans Le Roux, widely celebrated for his chaotic cityscapes created for puzzles and postcards. The piece captures the architectural spirit of Amsterdam's Canal Ring, a UNESCO World Heritage site built primarily during the Dutch Golden Age in the 17th century. Through its lively and satirical style, the illustration playfully caricatures the city's frantic tourist culture, busy water traffic, and historic charm, making it a popular memento for visitors.",
     "note": "",
     "orientation": "horizontal",
     "size": "big",
@@ -663,50 +668,9 @@
     ]
   },
   {
-    "catalogue": 108,
-    "id": 86,
-    "title": "siu mai",
-    "location": "Hong Kong, China",
-    "date": "",
-    "store": "",
-    "store_coordinates": "",
-    "description": "",
-    "history": "",
-    "note": "",
-    "orientation": "vertical",
-    "size": "small",
-    "type": "drawn",
-    "image": "/postcards/108.png",
-    "colours": [
-      "white",
-      "yellow",
-      "red"
-    ]
-  },
-  {
-    "catalogue": 34,
-    "id": 41,
-    "title": "little prince plane",
-    "location": "brussels",
-    "date": "",
-    "store": "",
-    "store_coordinates": "",
-    "description": "",
-    "history": "",
-    "note": "",
-    "orientation": "horizontal",
-    "size": "small",
-    "type": "drawn",
-    "colours": [
-      "white",
-      "grey",
-      "red"
-    ]
-  },
-  {
-    "catalogue": 35,
-    "id": 60,
-    "title": "santos",
+    "catalogue": 33,
+    "id": 61,
+    "title": "recipe",
     "location": "Lisbon, Portugal",
     "date": "",
     "store": "",
@@ -716,7 +680,49 @@
     "note": "",
     "orientation": "vertical",
     "size": "small",
+    "type": "drawn",
+    "image": "/postcards/033.png",
+    "colours": [
+      "white",
+      "black"
+    ]
+  },
+  {
+    "catalogue": 34,
+    "id": 41,
+    "title": "Le Petit Prince",
+    "location": "Brussels, Belgium",
+    "date": "26/03/2024",
+    "store": "Moule à gaufres",
+    "store_coordinates": "50.8454, 4.3503",
+    "description": "",
+    "history": "",
+    "note": "",
+    "orientation": "horizontal",
+    "size": "small",
+    "type": "drawn",
+    "image": "/postcards/034.png",
+    "colours": [
+      "white",
+      "grey",
+      "red"
+    ]
+  },
+  {
+    "catalogue": 35,
+    "id": 60,
+    "title": "Festas de Lisboa '24",
+    "location": "Lisbon, Portugal",
+    "date": "23/04/2023",
+    "store": "Ler Devagar",
+    "store_coordinates": "38.7028, -9.17842",
+    "description": "Minimalist graphic poster featuring a vibrant electric yellow background. The center contains a high-contrast magenta image of a potted bush basil plant (manjerico) with a tiny, rectangular paper flag tucked into its leaves. The top left corner displays a circular \"LISBOA CULTURA\" logo, and the bottom features the bold, black text \"FESTAS DE LISBOA '24.\"",
+    "history": "Official promotional poster for the 2024 Festas de Lisboa, a month-long midsummer festival held every June in Portugal's capital. The featured manjerico plant is the ultimate cultural symbol of the city's St. Anthony celebrations, traditionally gifted to loved ones along with a small paper flag containing a romantic, poetic verse. Commissioned by Lisbon's municipal cultural department, the modern design represents the city's blend of contemporary identity with historic traditions like street parties (arraiais) and neighborhood parades.",
+    "note": "",
+    "orientation": "vertical",
+    "size": "small",
     "type": "photo",
+    "image": "/postcards/035.png",
     "colours": [
       "yellow",
       "pink"
@@ -806,10 +812,10 @@
     ]
   },
   {
-    "catalogue": 107,
-    "id": 18,
-    "title": "city paiting",
-    "location": "Dubrovnik, Croatia",
+    "catalogue": 40,
+    "id": 35,
+    "title": "icons",
+    "location": "Hong Kong, China",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -819,10 +825,11 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/040.png",
     "colours": [
-      "blue",
-      "yellow",
-      "orange"
+      "white",
+      "green",
+      "blue"
     ]
   },
   {
@@ -995,7 +1002,7 @@
   {
     "catalogue": 49,
     "id": 102,
-    "title": "seagul method",
+    "title": "Seagul Method",
     "location": "Lisbon, Portugal",
     "date": "",
     "store": "",
@@ -1363,10 +1370,10 @@
     ]
   },
   {
-    "catalogue": 105,
-    "id": 45,
-    "title": "flowers",
-    "location": "Amsterdam, Netherlands",
+    "catalogue": 67,
+    "id": 30,
+    "title": "travessa",
+    "location": "Macao, China",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -1376,8 +1383,9 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/067.png",
     "colours": [
-      "yellow",
+      "blue",
       "green",
       "pink"
     ]
@@ -1810,10 +1818,10 @@
     ]
   },
   {
-    "catalogue": 101,
-    "id": 8,
-    "title": "",
-    "location": "Macao, China",
+    "catalogue": 89,
+    "id": 6,
+    "title": "oktoberfest",
+    "location": "Munich, Germany",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -1823,8 +1831,9 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
+    "image": "/postcards/089.png",
     "colours": [
-      "white",
+      "grey",
       "green",
       "orange"
     ]
@@ -2055,10 +2064,10 @@
     ]
   },
   {
-    "catalogue": 89,
-    "id": 6,
-    "title": "oktoberfest",
-    "location": "Munich, Germany",
+    "catalogue": 101,
+    "id": 8,
+    "title": "",
+    "location": "Macao, China",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -2068,9 +2077,8 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/089.png",
     "colours": [
-      "grey",
+      "white",
       "green",
       "orange"
     ]
@@ -2137,10 +2145,10 @@
     ]
   },
   {
-    "catalogue": 67,
-    "id": 30,
-    "title": "travessa",
-    "location": "Macao, China",
+    "catalogue": 105,
+    "id": 45,
+    "title": "flowers",
+    "location": "Amsterdam, Netherlands",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -2150,9 +2158,8 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/067.png",
     "colours": [
-      "blue",
+      "yellow",
       "green",
       "pink"
     ]
@@ -2178,10 +2185,10 @@
     ]
   },
   {
-    "catalogue": 40,
-    "id": 35,
-    "title": "icons",
-    "location": "Hong Kong, China",
+    "catalogue": 107,
+    "id": 18,
+    "title": "city paiting",
+    "location": "Dubrovnik, Croatia",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -2193,16 +2200,16 @@
     "type": "drawn",
     "image": "/postcards/107.png",
     "colours": [
-      "white",
-      "green",
-      "blue"
+      "blue",
+      "yellow",
+      "orange"
     ]
   },
   {
-    "catalogue": 33,
-    "id": 61,
-    "title": "recipe",
-    "location": "Lisbon, Portugal",
+    "catalogue": 108,
+    "id": 86,
+    "title": "siu mai",
+    "location": "Hong Kong, China",
     "date": "",
     "store": "",
     "store_coordinates": "",
@@ -2212,10 +2219,11 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/033.png",
+    "image": "/postcards/108.png",
     "colours": [
       "white",
-      "black"
+      "yellow",
+      "red"
     ]
   },
   {
