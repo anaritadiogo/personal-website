@@ -1013,6 +1013,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/049.png",
     "colours": [
       "white",
       "red"
@@ -1073,6 +1074,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/052.png",
     "colours": [
       "grey",
       "yellow",
@@ -1156,6 +1158,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/056.png", 
     "colours": [
       "yellow",
       "green",
@@ -1466,6 +1469,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "photo",
+    "image": "/postcards/071.png",
     "colours": [
       "white",
       "green",
@@ -1507,6 +1511,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/073.png",  
     "colours": [
       "red",
       "orange",
@@ -1527,6 +1532,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/074.png",
     "colours": [
       "blue",
       "white"
@@ -1811,6 +1817,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/088.png",
     "colours": [
       "grey",
       "yellow",
@@ -1873,6 +1880,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
+    "image": "/postcards/091.png",
     "colours": [
       "black",
       "grey",
@@ -1913,6 +1921,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/093.png",
     "colours": [
       "white",
       "pink",
@@ -1954,6 +1963,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/095.png",
     "colours": [
       "blue",
       "green",
@@ -2015,6 +2025,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
+    "image": "/postcards/098.png",
     "colours": [
       "red",
       "green",
@@ -2178,6 +2189,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/106.png",
     "colours": [
       "red",
       "yellow",
@@ -2236,11 +2248,11 @@
     "store_coordinates": "",
     "description": "",
     "history": "",
-  
     "note": "",
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/109.png",
     "colours": [
       "blue",
       "green",
