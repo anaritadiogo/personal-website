@@ -231,10 +231,6 @@ button, a {
   cursor: grabbing;
 }
 
-.postcard-wall-card-photo {
-  border: 5px solid #f7f7f4;
-}
-
 .postcard-wall-card:focus-visible {
   z-index: 1;
   outline: 2px solid white;

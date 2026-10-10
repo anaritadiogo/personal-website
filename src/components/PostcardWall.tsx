@@ -88,7 +88,7 @@ export function PostcardArtwork({ postcard, expanded = false }: { postcard: Post
 
   return (
     <div
-      className={`relative h-full w-full overflow-hidden ${postcard.type === "photo" ? "border-[5px] border-[#f7f7f4]" : ""}`}
+      className="relative h-full w-full overflow-hidden"
       style={{
         aspectRatio: `${w} / ${h}`,
         backgroundColor: postcard.image ? "transparent" : "var(--card-colour)",
@@ -272,7 +272,7 @@ export default function PostcardWall({
                     draggedCardRef.current = false
                   }, 0)
                 }}
-                className={`postcard-wall-card ${postcard.image ? "postcard-wall-card-image" : ""} ${postcard.type === "photo" ? "postcard-wall-card-photo" : ""}`}
+                className={`postcard-wall-card ${postcard.image ? "postcard-wall-card-image" : ""}`}
                 style={{
                   ...style,
                   zIndex: raisedCard === postcard.catalogue ? 20 : undefined,

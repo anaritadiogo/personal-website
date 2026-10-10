@@ -250,7 +250,7 @@ export default function Postcards() {
         style={{ transitionDuration: `${FLIP_DURATION}ms` }}
       />
       <div
-        className={`postcard-wall-card ${active.postcard.type === "photo" ? "postcard-wall-card-photo" : ""} transition-[top,left,width,height] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none`}
+        className="postcard-wall-card transition-[top,left,width,height] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
         style={{
           position: "fixed",
           top: displayBox.top,
