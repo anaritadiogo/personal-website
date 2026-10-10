@@ -994,6 +994,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/048.png",
     "colours": [
       "blue",
       "brown",
@@ -1034,6 +1035,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
+    "image": "/postcards/050.png",
     "colours": [
       "yellow",
       "orange",
