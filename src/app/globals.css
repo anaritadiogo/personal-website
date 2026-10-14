@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -216,7 +215,7 @@ button, a {
   border-radius: 1px;
   background-color: var(--card-colour);
   background-image: var(--card-gradient);
-  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
+  box-shadow: none;
   color: white;
   cursor: grab;
   text-align: left;
@@ -224,7 +223,7 @@ button, a {
 }
 
 .postcard-wall-card-image {
-  background: transparent;
+  background: #fff;
 }
 
 .postcard-wall-card:active {

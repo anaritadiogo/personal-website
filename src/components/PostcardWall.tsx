@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from "react"
+import Image from "next/image"
 import { drawablyCircle } from "drawably"
 import { DrawablyQuote } from "drawably/react"
 import { motion, useReducedMotion } from "motion/react"
@@ -91,17 +92,18 @@ export function PostcardArtwork({ postcard, expanded = false }: { postcard: Post
       className="relative h-full w-full overflow-hidden"
       style={{
         aspectRatio: `${w} / ${h}`,
-        backgroundColor: postcard.image ? "transparent" : "var(--card-colour)",
+        backgroundColor: postcard.image ? "#fff" : "var(--card-colour)",
         backgroundImage: postcard.image ? "none" : "var(--card-gradient)",
       }}
     >
       {postcard.image ? (
-        <img
+        <Image
           src={postcard.image}
           alt={alt}
+          fill
+          sizes="(max-width: 639px) 85vw, (max-width: 1024px) 40vw, 30vw"
           draggable={false}
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="object-contain"
         />
       ) : (
         <>

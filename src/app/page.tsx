@@ -1,6 +1,8 @@
 "use client"
 
-import { useEffect, useState, type MouseEvent } from "react"
+import { useEffect, useState, useSyncExternalStore, type MouseEvent } from "react"
+import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { drawablyButton } from "drawably"
 import { DrawablyUnderline } from "drawably/react"
 import { motion, useReducedMotion, type Variants } from "motion/react"
@@ -13,10 +15,15 @@ type ComingSoonPosition = {
 }
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false)
   const [isLeaving, setIsLeaving] = useState(false)
   const [comingSoonPosition, setComingSoonPosition] = useState<ComingSoonPosition | null>(null)
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  )
   const prefersReducedMotion = useReducedMotion()
+  const router = useRouter()
   const textReveal: Variants = {
     hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 10 },
     visible: {
@@ -27,21 +34,11 @@ export default function Home() {
   }
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  useEffect(() => {
     if (!mounted) return
 
-    const aboutBtn = document.querySelector("#about")
-    const projectsBtn = document.querySelector("#projects")
-    const photographyBtn = document.querySelector("#photography")
-    const postcardsBtn = document.querySelector("#postcards")
-    
-    if (aboutBtn) drawablyButton(aboutBtn as HTMLElement, { variant: "outline" })
-    if (projectsBtn) drawablyButton(projectsBtn as HTMLElement, { variant: "outline" })
-    if (photographyBtn) drawablyButton(photographyBtn as HTMLElement, { variant: "outline" })
-    if (postcardsBtn) drawablyButton(postcardsBtn as HTMLElement, { variant: "outline" })
+    const buttons = document.querySelectorAll<HTMLElement>("#about, #projects, #photography, #postcards")
+    const sketches = Array.from(buttons, (button) => drawablyButton(button, { variant: "outline" }))
+    return () => sketches.forEach((sketch) => sketch.destroy())
   }, [mounted])
 
   const showComingSoon = (event: MouseEvent<HTMLButtonElement>) => {
@@ -58,7 +55,7 @@ export default function Home() {
     event.preventDefault()
 
     if (prefersReducedMotion) {
-      window.location.assign("/postcards")
+      router.push("/postcards")
       return
     }
 
@@ -71,7 +68,7 @@ export default function Home() {
       animate={isLeaving ? { opacity: 0, y: -16 } : { opacity: 1, y: 0 }}
       transition={{ duration: prefersReducedMotion ? 0 : 0.45, ease: "easeInOut" }}
       onAnimationComplete={() => {
-        if (isLeaving) window.location.assign("/postcards")
+        if (isLeaving) router.push("/postcards")
       }}
     >
       <motion.div
@@ -94,7 +91,7 @@ export default function Home() {
         </motion.div>
         <motion.div className="flex gap-6" variants={textReveal}>
           <button id="photography" onClick={showComingSoon} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>photography</button>
-          <a id="postcards" href="/postcards" onClick={openPostcards} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}>postcards</a>
+          <Link id="postcards" href="/postcards" onClick={openPostcards} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}>postcards</Link>
         </motion.div>
       </motion.div>
       {comingSoonPosition !== null && (
@@ -131,7 +128,7 @@ export default function Home() {
           }}
         >
           <motion.h1
-            className="text-100xl md:text-100xl font-bold text-white mb-6 tracking-tight italic"
+            className="mb-6 text-[clamp(3.5rem,10vw,8rem)] font-bold tracking-tight text-white italic leading-none"
             style={{ fontFamily: 'var(--font-instrument-serif)' }}
             variants={{
               hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 16 },
@@ -140,13 +137,13 @@ export default function Home() {
           >
             hello stranger,
           </motion.h1>
-          <motion.p className="text-l md:text-m text-white font-light" variants={textReveal}>
-            i'm <DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>
+          <motion.p className="text-base md:text-lg text-white font-light" variants={textReveal}>
+            i&apos;m <DrawablyUnderline style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>
               ana
             </DrawablyUnderline>. engineer, traveler, collector.
           </motion.p>
-          <motion.p className="text-l md:text-m text-white font-light" variants={textReveal}>welcome to my corner of the internet,</motion.p>
-          <motion.p className="text-l md:text-m text-white font-light" variants={textReveal}>pull up a chair, poke around.</motion.p>
+          <motion.p className="text-base md:text-lg text-white font-light" variants={textReveal}>welcome to my corner of the internet,</motion.p>
+          <motion.p className="text-base md:text-lg text-white font-light" variants={textReveal}>pull up a chair, poke around.</motion.p>
         </motion.div>
       </div>
       <motion.footer

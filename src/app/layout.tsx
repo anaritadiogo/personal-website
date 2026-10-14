@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { FolderProvider } from "@/context/FolderContext";
 import LayoutClient from "./layout-client";
 
 const geistSans = Geist({
@@ -26,9 +25,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ana's portfolio",
-  description: "Explore travel photography, software projects, postcard collection, and creative works",
-  keywords: ["photography", "portfolio", "travel", "software", "projects"],
+  title: {
+    default: "Ana Rita Diogo | Portfolio",
+    template: "%s | Ana Rita Diogo",
+  },
+  description: "A personal corner of the internet by Ana Rita Diogo, featuring a growing collection of postcards.",
+  keywords: ["Ana Rita Diogo", "personal website", "postcards", "travel"],
+  openGraph: {
+    title: "Ana Rita Diogo | Portfolio",
+    description: "A personal corner of the internet by Ana Rita Diogo, featuring a growing collection of postcards.",
+    siteName: "Ana Rita Diogo",
+    type: "website",
+  },
   icons: {
     icon: "/favicon.svg",
   },
@@ -42,9 +50,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-black text-[#e8e4df]" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>
         <LayoutClient>
-          <FolderProvider>
-            <main className="flex-1">{children}</main>
-          </FolderProvider>
+          <main className="flex-1">{children}</main>
         </LayoutClient>
       </body>
     </html>

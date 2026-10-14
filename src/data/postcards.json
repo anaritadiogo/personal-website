@@ -13,7 +13,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/001.png",
+    "image": "/postcards/001.webp",
     "colours": [
       "blue",
       "white",
@@ -34,7 +34,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/002.png",
+    "image": "/postcards/002.webp",
     "colours": [
       "white",
       "blue",
@@ -55,7 +55,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/003.png",
+    "image": "/postcards/003.webp",
     "colours": [
       "yellow",
       "blue",
@@ -76,7 +76,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/004.png",
+    "image": "/postcards/004.webp",
     "colours": [
       "black",
       "orange",
@@ -97,7 +97,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/005.png",
+    "image": "/postcards/005.webp",
     "colours": [
       "grey",
       "yellow",
@@ -118,7 +118,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/006.png",
+    "image": "/postcards/006.webp",
     "colours": [
       "green",
       "yellow",
@@ -139,7 +139,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/007.png",
+    "image": "/postcards/007.webp",
     "colours": [
       "red",
       "blue",
@@ -160,7 +160,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/008.png",
+    "image": "/postcards/008.webp",
     "colours": [
       "white",
       "green",
@@ -181,7 +181,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/009.png",
+    "image": "/postcards/009.webp",
     "colours": [
       "blue",
       "orange",
@@ -202,7 +202,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/010.png",
+    "image": "/postcards/010.webp",
     "colours": [
       "orange",
       "white",
@@ -223,7 +223,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/011.png",
+    "image": "/postcards/011.webp",
     "colours": [
       "yellow",
       "grey"
@@ -243,7 +243,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/012.png",
+    "image": "/postcards/012.webp",
     "colours": [
       "white",
       "green"
@@ -263,7 +263,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/013.png",
+    "image": "/postcards/013.webp",
     "colours": [
       "black",
       "white"
@@ -283,7 +283,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/014.png",
+    "image": "/postcards/014.webp",
     "colours": [
       "blue",
       "brown",
@@ -304,7 +304,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/015.png",
+    "image": "/postcards/015.webp",
     "colours": [
       "red",
       "blue",
@@ -325,7 +325,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/016.png",
+    "image": "/postcards/016.webp",
     "colours": [
       "yellow",
       "green",
@@ -346,7 +346,7 @@
     "orientation": "horizontal",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/017.png",
+    "image": "/postcards/017.webp",
     "colours": [
       "white",
       "red",
@@ -367,7 +367,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/018.png",
+    "image": "/postcards/018.webp",
     "colours": [
       "orange",
       "yellow",
@@ -388,7 +388,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/019.png",
+    "image": "/postcards/019.webp",
     "colours": [
       "green",
       "red",
@@ -409,7 +409,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/020.png",
+    "image": "/postcards/020.webp",
     "colours": [
       "grey",
       "white"
@@ -429,7 +429,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/021.png",
+    "image": "/postcards/021.webp",
     "colours": [
       "blue",
       "yellow",
@@ -450,7 +450,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/022.png",
+    "image": "/postcards/022.webp",
     "colours": [
       "orange",
       "white",
@@ -471,7 +471,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/023.png",
+    "image": "/postcards/023.webp",
     "colours": [
       "yellow",
       "red",
@@ -492,7 +492,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/024.png",
+    "image": "/postcards/024.webp",
     "colours": [
       "white",
       "blue",
@@ -513,7 +513,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/025.png",
+    "image": "/postcards/025.webp",
     "colours": [
       "blue",
       "yellow",
@@ -534,7 +534,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/026.png",
+    "image": "/postcards/026.webp",
     "colours": [
       "black",
       "grey",
@@ -555,7 +555,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/027.png",
+    "image": "/postcards/027.webp",
     "colours": [
       "brown",
       "blue",
@@ -576,7 +576,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/028.png",
+    "image": "/postcards/028.webp",
     "colours": [
       "purple",
       "yellow",
@@ -597,7 +597,7 @@
     "orientation": "horizontal",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/029.png",
+    "image": "/postcards/029.webp",
     "colours": [
       "red",
       "blue",
@@ -611,14 +611,14 @@
     "location": "Prague, Czechia",
     "date": "14/12/2022",
     "store": "Academia Bookshop",
-    "store_coordisnates": "50.08197, 14.42601",
+    "store_coordinates": "50.08197, 14.42601",
     "description": "An Art Nouveau poster of a woman with long, dark, flowing hair adorned with red flowers, reclining in a pale orange-yellow gown. She holds a lit cigarette in one raised hand and a small JOB packet in the other. A large green circle frames her, with big brown \"JOB\" lettering across the top and a yellow geometric pattern behind.",
     "history": "Designed by Czech artist Alphonse Mucha in 1898, this lithograph was a commercial advertisement for the French JOB cigarette paper company [JOB Collection]. It defines the Art Nouveau movement's trend of blending fine art with mass advertising to sell products through stylized, sensory imagery. The woman's cascading, swirling hair became a hallmark of the Belle Époque design aesthetic.",
     "note": "",
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/030.png",
+    "image": "/postcards/030.webp",
     "colours": [
       "yellow",
       "green",
@@ -639,7 +639,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/031.png",
+    "image": "/postcards/031.webp",
     "colours": [
       "blue",
       "pink",
@@ -660,7 +660,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/032.png",
+    "image": "/postcards/032.webp",
     "colours": [
       "green",
       "red",
@@ -681,7 +681,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/033.png",
+    "image": "/postcards/033.webp",
     "colours": [
       "white",
       "black"
@@ -701,7 +701,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/034.png",
+    "image": "/postcards/034.webp",
     "colours": [
       "white",
       "grey",
@@ -722,7 +722,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/035.png",
+    "image": "/postcards/035.webp",
     "colours": [
       "yellow",
       "pink"
@@ -742,7 +742,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/036.png",
+    "image": "/postcards/036.webp",
     "colours": [
       "blue",
       "white",
@@ -763,7 +763,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/037.png",
+    "image": "/postcards/037.webp",
     "colours": [
       "orange",
       "white",
@@ -784,7 +784,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/038.png",
+    "image": "/postcards/038.webp",
     "colours": [
       "green",
       "red",
@@ -805,7 +805,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/039.png",
+    "image": "/postcards/039.webp",
     "colours": [
       "black",
       "white",
@@ -826,7 +826,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/040.png",
+    "image": "/postcards/040.webp",
     "colours": [
       "white",
       "green",
@@ -847,7 +847,7 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/041.png",
+    "image": "/postcards/041.webp",
     "colours": [
       "white",
       "red",
@@ -868,7 +868,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/042.png",
+    "image": "/postcards/042.webp",
     "colours": [
       "red",
       "yellow",
@@ -889,7 +889,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/043.png",
+    "image": "/postcards/043.webp",
     "colours": [
       "pink",
       "brown",
@@ -910,7 +910,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/044.png",
+    "image": "/postcards/044.webp",
     "colours": [
       "yellow",
       "orange",
@@ -931,7 +931,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/045.png",
+    "image": "/postcards/045.webp",
     "colours": [
       "grey",
       "yellow",
@@ -951,7 +951,7 @@
     "note": "",
     "orientation": "vertical",
     "size": "small",
-    "image": "/postcards/046.png",
+    "image": "/postcards/046.webp",
     "type": "drawn",
     "colours": [
       "white",
@@ -973,7 +973,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/047.png",
+    "image": "/postcards/047.webp",
     "colours": [
       "black",
       "grey",
@@ -994,7 +994,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/048.png",
+    "image": "/postcards/048.webp",
     "colours": [
       "blue",
       "brown",
@@ -1015,7 +1015,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/049.png",
+    "image": "/postcards/049.webp",
     "colours": [
       "white",
       "red"
@@ -1035,7 +1035,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/050.png",
+    "image": "/postcards/050.webp",
     "colours": [
       "yellow",
       "orange",
@@ -1056,7 +1056,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/051.png",
+    "image": "/postcards/051.webp",
     "colours": [
       "green",
       "red",
@@ -1077,7 +1077,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/052.png",
+    "image": "/postcards/052.webp",
     "colours": [
       "grey",
       "yellow",
@@ -1098,7 +1098,7 @@
     "orientation": "horizontal",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/053.png",
+    "image": "/postcards/053.webp",
     "colours": [
       "blue",
       "green",
@@ -1119,7 +1119,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/054.png",
+    "image": "/postcards/054.webp",
     "colours": [
       "white",
       "blue",
@@ -1140,7 +1140,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/055.png",
+    "image": "/postcards/055.webp",
     "colours": [
       "red",
       "brown",
@@ -1161,7 +1161,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/056.png", 
+    "image": "/postcards/056.webp",
     "colours": [
       "yellow",
       "green",
@@ -1182,7 +1182,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/057.png",
+    "image": "/postcards/057.webp",
     "colours": [
       "black",
       "yellow",
@@ -1203,7 +1203,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/058.png",
+    "image": "/postcards/058.webp",
     "colours": [
       "green",
       "white",
@@ -1224,7 +1224,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/059.png",
+    "image": "/postcards/059.webp",
     "colours": [
       "blue",
       "green",
@@ -1245,7 +1245,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/060.png",
+    "image": "/postcards/060.webp",
     "colours": [
       "white",
       "blue",
@@ -1266,7 +1266,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/061.png",
+    "image": "/postcards/061.webp",
     "colours": [
       "yellow",
       "brown"
@@ -1286,7 +1286,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/062.png",
+    "image": "/postcards/062.webp",
     "colours": [
       "orange",
       "blue",
@@ -1307,7 +1307,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/063.png",
+    "image": "/postcards/063.webp",
     "colours": [
       "brown",
       "green",
@@ -1328,7 +1328,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/064.png",
+    "image": "/postcards/064.webp",
     "colours": [
       "white",
       "grey",
@@ -1349,7 +1349,7 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/065.png",
+    "image": "/postcards/065.webp",
     "colours": [
       "blue",
       "white",
@@ -1370,7 +1370,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/066.png",
+    "image": "/postcards/066.webp",
     "colours": [
       "red",
       "blue",
@@ -1391,7 +1391,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/067.png",
+    "image": "/postcards/067.webp",
     "colours": [
       "blue",
       "green",
@@ -1412,7 +1412,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/068.png",
+    "image": "/postcards/068.webp",
     "colours": [
       "green",
       "yellow",
@@ -1433,7 +1433,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/069.png",
+    "image": "/postcards/069.webp",
     "colours": [
       "orange",
       "blue",
@@ -1454,7 +1454,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/070.png",
+    "image": "/postcards/070.webp",
     "colours": [
       "grey",
       "yellow",
@@ -1475,7 +1475,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/071.png",
+    "image": "/postcards/071.webp",
     "colours": [
       "white",
       "green",
@@ -1496,7 +1496,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/072.png",
+    "image": "/postcards/072.webp",
     "colours": [
       "black",
       "white",
@@ -1517,7 +1517,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/073.png",  
+    "image": "/postcards/073.webp",
     "colours": [
       "red",
       "orange",
@@ -1538,7 +1538,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/074.png",
+    "image": "/postcards/074.webp",
     "colours": [
       "blue",
       "white"
@@ -1558,7 +1558,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/075.png",
+    "image": "/postcards/075.webp",
     "colours": [
       "grey",
       "yellow",
@@ -1579,7 +1579,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/076.png",
+    "image": "/postcards/076.webp",
     "colours": [
       "white",
       "pink",
@@ -1600,7 +1600,7 @@
     "orientation": "horizontal",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/077.png",
+    "image": "/postcards/077.webp",
     "colours": [
       "green",
       "blue",
@@ -1621,7 +1621,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/078.png",
+    "image": "/postcards/078.webp",
     "colours": [
       "yellow",
       "green",
@@ -1642,7 +1642,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/079.png",
+    "image": "/postcards/079.webp",
     "colours": [
       "white",
       "yellow",
@@ -1663,7 +1663,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/080.png",
+    "image": "/postcards/080.webp",
     "colours": [
       "blue",
       "red",
@@ -1684,7 +1684,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/081.png",
+    "image": "/postcards/081.webp",
     "colours": [
       "green",
       "red",
@@ -1705,7 +1705,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/082.png",
+    "image": "/postcards/082.webp",
     "colours": [
       "pink",
       "yellow",
@@ -1726,7 +1726,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/083.png",
+    "image": "/postcards/083.webp",
     "colours": [
       "black",
       "white"
@@ -1746,7 +1746,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/084.png",
+    "image": "/postcards/084.webp",
     "colours": [
       "white",
       "blue",
@@ -1767,7 +1767,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/085.png",
+    "image": "/postcards/085.webp",
     "colours": [
       "blue",
       "red",
@@ -1788,7 +1788,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/086.png",
+    "image": "/postcards/086.webp",
     "colours": [
       "brown",
       "red",
@@ -1809,7 +1809,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/087.png",
+    "image": "/postcards/087.webp",
     "colours": [
       "yellow",
       "orange"
@@ -1829,7 +1829,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/088.png",
+    "image": "/postcards/088.webp",
     "colours": [
       "grey",
       "yellow",
@@ -1850,7 +1850,7 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/089.png",
+    "image": "/postcards/089.webp",
     "colours": [
       "grey",
       "green",
@@ -1871,7 +1871,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/090.png",
+    "image": "/postcards/090.webp",
     "colours": [
       "green",
       "blue",
@@ -1892,7 +1892,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/091.png",
+    "image": "/postcards/091.webp",
     "colours": [
       "black",
       "grey",
@@ -1913,7 +1913,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/092.png",
+    "image": "/postcards/092.webp",
     "colours": [
       "red",
       "green",
@@ -1934,7 +1934,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/093.png",
+    "image": "/postcards/093.webp",
     "colours": [
       "white",
       "pink",
@@ -1955,7 +1955,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/094.png",
+    "image": "/postcards/094.webp",
     "colours": [
       "yellow",
       "orange",
@@ -1976,7 +1976,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/095.png",
+    "image": "/postcards/095.webp",
     "colours": [
       "blue",
       "green",
@@ -1997,7 +1997,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/096.png",
+    "image": "/postcards/096.webp",
     "colours": [
       "orange",
       "black"
@@ -2017,7 +2017,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/097.png",
+    "image": "/postcards/097.webp",
     "colours": [
       "white",
       "blue",
@@ -2038,7 +2038,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "photo",
-    "image": "/postcards/098.png",
+    "image": "/postcards/098.webp",
     "colours": [
       "red",
       "green",
@@ -2059,7 +2059,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/099.png",
+    "image": "/postcards/099.webp",
     "colours": [
       "yellow",
       "red",
@@ -2080,7 +2080,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/100.png",
+    "image": "/postcards/100.webp",
     "colours": [
       "green",
       "white",
@@ -2101,7 +2101,7 @@
     "orientation": "vertical",
     "size": "big",
     "type": "drawn",
-    "image": "/postcards/101.png",
+    "image": "/postcards/101.webp",
     "colours": [
       "white",
       "green",
@@ -2122,7 +2122,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/102.png",
+    "image": "/postcards/102.webp",
     "colours": [
       "white",
       "blue",
@@ -2143,7 +2143,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/103.png",
+    "image": "/postcards/103.webp",
     "colours": [
       "yellow",
       "black",
@@ -2164,7 +2164,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/104.png",
+    "image": "/postcards/104.webp",
     "colours": [
       "brown",
       "red",
@@ -2185,7 +2185,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/105.png",
+    "image": "/postcards/105.webp",
     "colours": [
       "yellow",
       "green",
@@ -2206,7 +2206,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/106.png",
+    "image": "/postcards/106.webp",
     "colours": [
       "red",
       "yellow",
@@ -2227,7 +2227,7 @@
     "orientation": "horizontal",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/107.png",
+    "image": "/postcards/107.webp",
     "colours": [
       "blue",
       "yellow",
@@ -2248,7 +2248,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/108.png",
+    "image": "/postcards/108.webp",
     "colours": [
       "white",
       "yellow",
@@ -2269,7 +2269,7 @@
     "orientation": "vertical",
     "size": "small",
     "type": "drawn",
-    "image": "/postcards/109.png",
+    "image": "/postcards/109.webp",
     "colours": [
       "blue",
       "green",

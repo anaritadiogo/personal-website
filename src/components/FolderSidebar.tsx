@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, type CSSProperties } from 'react'
 import { useFolderContext } from '@/context/FolderContext'
 
 interface FolderItem {
@@ -26,32 +26,27 @@ export default function FolderSidebar() {
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
 
   // Generate two clip-path shapes: resting (pulled inward) and selected (expanded outward)
-  const generateOutline = (W: number, H: number, dx: number, dy: number, f: number = 12) => {
-    const X = W - dx
-    const T = dy
-    const B = H - dy
-
-    return `path('M0,${T} Q0,${T + f} 10,${T + f} L${X - 8},${T + f + 10} Q${X},${T + f + 13} ${X},${T + f + 21} L${X},${B - f - 21} Q${X},${B - f - 13} ${X - 8},${B - f - 10} L10,${B - f} Q0,${B - f} 0,${B} Z')`
-  }
-
-  const generateShape = (tab: HTMLButtonElement) => {
-    const W = tab.offsetWidth + 7
-    const H = tab.offsetHeight + 32
-
-    const restingShape = generateOutline(W, H, 7, 4) // pulled inward
-    const selectedShape = generateOutline(W, H, 0, 0) // expanded outward
-
-    tab.style.setProperty('--shape', restingShape)
-    tab.style.setProperty('--shape-on', selectedShape)
-  }
-
   useEffect(() => {
-    const tabs = tabRefs.current.filter(Boolean) as HTMLButtonElement[]
+    const tabs = tabRefs.current.filter((tab): tab is HTMLButtonElement => tab !== null)
+
+    const generateOutline = (width: number, height: number, dx: number, dy: number, f = 12) => {
+      const right = width - dx
+      const top = dy
+      const bottom = height - dy
+
+      return `path('M0,${top} Q0,${top + f} 10,${top + f} L${right - 8},${top + f + 10} Q${right},${top + f + 13} ${right},${top + f + 21} L${right},${bottom - f - 21} Q${right},${bottom - f - 13} ${right - 8},${bottom - f - 10} L10,${bottom - f} Q0,${bottom - f} 0,${bottom} Z')`
+    }
+
+    const generateShape = (tab: HTMLButtonElement) => {
+      const width = tab.offsetWidth + 7
+      const height = tab.offsetHeight + 32
+
+      tab.style.setProperty('--shape', generateOutline(width, height, 7, 4))
+      tab.style.setProperty('--shape-on', generateOutline(width, height, 0, 0))
+    }
 
     const updateShapes = () => {
-      tabs.forEach((tab) => {
-        generateShape(tab)
-      })
+      tabs.forEach(generateShape)
     }
 
     updateShapes()
@@ -148,7 +143,6 @@ export default function FolderSidebar() {
                 marginLeft: 'calc(100% - 1px)',
                 padding: '28px 15px 28px 10px',
                 backgroundColor: 'transparent',
-                // @ts-ignore
                 '--tab-color': folder.bgColor,
                 color: '#2a2b29',
                 fontSize: '13px',
@@ -162,7 +156,7 @@ export default function FolderSidebar() {
                 transition: 'filter 200ms',
                 zIndex: activeFolder === folder.id ? 50 : 40 - index,
                 lineHeight: 1,
-              }}
+              } as CSSProperties & { '--tab-color': string }}
               onMouseEnter={(e) => {
                 if (activeFolder !== folder.id) {
                   e.currentTarget.style.filter = 'drop-shadow(3px 0 3px rgba(0,0,0,.4)) brightness(1.05)'

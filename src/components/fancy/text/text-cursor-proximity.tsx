@@ -47,7 +47,7 @@ export default function TextCursorProximity({
         const charCenterX = rect.left + rect.width / 2
         const charCenterY = rect.top + rect.height / 2
 
-        let distance = Math.sqrt(
+        const distance = Math.sqrt(
           Math.pow(cursorX - charCenterX, 2) +
             Math.pow(cursorY - charCenterY, 2)
         )
@@ -82,7 +82,7 @@ export default function TextCursorProximity({
     }, 1000 / 60) // 60fps
 
     return () => clearInterval(interval)
-  }, [radius, falloff, styles])
+  }, [radius, falloff, styles, positionRef])
 
   return (
     <div ref={elementRef} className={className}>
