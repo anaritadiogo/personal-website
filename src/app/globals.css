@@ -183,6 +183,228 @@ button, a {
   background: var(--accent-dark);
 }
 
+.postcards-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.postcard-wall-container {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.postcard-wall {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  height: var(--desktop-height);
+}
+
+.postcard-wall-card {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  left: var(--desktop-left);
+  top: var(--desktop-top);
+  width: var(--desktop-width);
+  height: var(--desktop-card-height);
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: 1px;
+  background-color: var(--card-colour);
+  background-image: var(--card-gradient);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
+  color: white;
+  cursor: grab;
+  text-align: left;
+  transition: opacity 0.18s ease;
+}
+
+.postcard-wall-card-image {
+  background: transparent;
+}
+
+.postcard-wall-card:active {
+  cursor: grabbing;
+}
+
+.postcard-wall-card:focus-visible {
+  z-index: 1;
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+.postcard-wall-card:hover .postcard-wall-label,
+.postcard-wall-card:focus-visible .postcard-wall-label {
+  opacity: 1;
+}
+
+.postcard-wall-label {
+  position: absolute;
+  left: 5px;
+  max-width: calc(100% - 10px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+.postcard-wall-number.drawably-circle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  max-width: calc(100% - 20px);
+  overflow: visible;
+  color: #000;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.postcard-wall-quote.drawably-quote {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 5px;
+  left: 5px;
+  display: block;
+  width: max-content;
+  height: auto;
+  max-width: calc(100% - 10px);
+  color: #000;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.postcard-wall-quote-location.drawably-host {
+  display: block;
+  max-width: 100%;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.postcard-wall-quote-title.drawably-host {
+  display: inline;
+  font-family: var(--font-jetbrains-mono);
+  overflow-wrap: anywhere;
+}
+
+.postcard-wall-quote-location.drawably-divider {
+  height: auto;
+  margin: 5px 0 0;
+  padding: 0;
+  overflow: visible;
+  font-family: var(--font-jetbrains-mono);
+  max-width: calc(100% + 6px);
+}
+
+.postcard-wall-quote-location > .drawably-svg {
+  left: -3px;
+  top: -5px;
+  height: 5px;
+}
+
+.postcard-wall-sentinel {
+  height: 1px;
+}
+
+.postcard-modal-outline.drawably-card {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.postcard-modal-back {
+  border-radius: 12px;
+}
+
+.postcard-modal-content {
+  padding: 20px 64px 20px 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.postcard-modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.postcard-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.postcard-modal-close-mark {
+  position: relative;
+  width: 14px;
+  height: 11.5px;
+}
+
+.postcard-modal-close-glyph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.postcard-modal-close-mark.drawably-host .postcard-modal-close-glyph {
+  font-family: var(--font-jetbrains-mono);
+}
+
+@media (min-width: 640px) {
+  .postcard-modal-content {
+    padding: 32px 64px;
+  }
+}
+
+@media (max-width: 639px) {
+  .postcard-wall {
+    height: var(--mobile-height);
+  }
+
+  .postcard-wall-card {
+    left: var(--mobile-left);
+    top: var(--mobile-top);
+    width: var(--mobile-width);
+    height: var(--mobile-card-height);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .postcard-wall-card,
+  .postcard-wall-label {
+    transition: none;
+  }
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -227,4 +449,16 @@ button, a {
   html {
     @apply font-sans;
   }
+}
+
+/* Global text selection */
+::selection {
+  background: #c97b86; /* Highlight background color */
+  color: #000000;     /* Highlight text color */
+}
+
+/* Firefox specific prefix */
+::-moz-selection {
+  background: #c97b86;
+  color: #000000;
 }
