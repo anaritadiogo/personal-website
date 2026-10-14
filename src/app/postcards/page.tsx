@@ -3,6 +3,7 @@
 import { drawablyButton, drawablyCard, drawablyCircle } from "drawably"
 import { motion, useReducedMotion } from "motion/react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { createPortal } from "react-dom"
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type MouseEvent } from "react"
 import postcardCatalogue from "@/data/postcards.json"
@@ -53,6 +54,7 @@ export default function Postcards() {
   const pendingFocusRef = useRef<HTMLButtonElement | null>(null)
   const closeTimeoutRef = useRef<number | null>(null)
   const prefersReducedMotion = useReducedMotion()
+  const router = useRouter()
 
   const openPostcard = useCallback((postcard: Postcard, source: HTMLButtonElement) => {
     if (active) return
@@ -129,7 +131,36 @@ export default function Postcards() {
   useEffect(() => {
     if (!active) return
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closePostcard()
+      if (event.key === "Escape") {
+        closePostcard()
+        return
+      }
+
+      if (event.key !== "Tab") return
+      if (active.phase !== "open") {
+        event.preventDefault()
+        overlayRef.current?.focus({ preventScroll: true })
+        return
+      }
+
+      const focusableElements = overlayRef.current?.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )
+      if (!focusableElements?.length) {
+        event.preventDefault()
+        overlayRef.current?.focus({ preventScroll: true })
+        return
+      }
+
+      const first = focusableElements[0]
+      const last = focusableElements[focusableElements.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
     }
     window.addEventListener("keydown", onKeyDown)
     return () => window.removeEventListener("keydown", onKeyDown)
@@ -162,7 +193,7 @@ export default function Postcards() {
     event.preventDefault()
 
     if (prefersReducedMotion) {
-      window.location.assign("/")
+      router.push("/")
       return
     }
 
@@ -176,8 +207,9 @@ export default function Postcards() {
       animate={isLeaving ? { opacity: 0, y: -16 } : { opacity: 1, y: 0 }}
       transition={{ duration: prefersReducedMotion ? 0 : 0.45, ease: "easeInOut" }}
       onAnimationComplete={() => {
-        if (isLeaving) window.location.assign("/")
+        if (isLeaving) router.push("/")
       }}
+      inert={isActive}
       style={{ height: "100vh", overflowX: "hidden", overflowY: "auto", position: "relative", scrollbarWidth: "none" }}
     >
       <motion.div
@@ -197,7 +229,7 @@ export default function Postcards() {
         </Link>
       </motion.div>
       <motion.h1
-        className="absolute top-30 left-1/2 z-20 -translate-x-1/2 text-100xl md:text-100xl font-bold text-white mb-6 tracking-tight italic"
+        className="absolute top-30 left-1/2 z-20 -translate-x-1/2 text-[clamp(3.5rem,10vw,8rem)] font-bold text-white mb-6 tracking-tight italic leading-none"
         initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: prefersReducedMotion ? 0 : 0.65, ease: "easeOut" }}
@@ -210,12 +242,12 @@ export default function Postcards() {
         style={{ left: "50%", top: "12rem", transform: "translateX(-50%)", width: "calc(100% - 2rem)" }}
       >
         <motion.p
-          className="text-l md:text-m text-center text-white font-light"
+          className="text-base md:text-lg text-center text-white font-light"
           initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.45, ease: "easeOut", delay: prefersReducedMotion ? 0 : 0.12 }}
         >
-          archive of selected postcards from my travels,
+          an archive of selected postcards from my travels,
           <br />
           digitized and annotated one scan at a time
         </motion.p>
