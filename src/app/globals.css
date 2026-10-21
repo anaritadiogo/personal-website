@@ -223,7 +223,7 @@ button, a {
 }
 
 .postcard-wall-card-image {
-  background: #fff;
+  background: transparent;
 }
 
 .postcard-wall-card:active {

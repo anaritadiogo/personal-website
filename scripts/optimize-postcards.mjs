@@ -41,8 +41,7 @@ for (const { postcard, input, output, publicPath } of imageEntries) {
       fit: "inside",
       withoutEnlargement: true,
     })
-    .flatten({ background: "#ffffff" })
-    .webp({ quality: 86, effort: 6 })
+    .webp({ quality: 86, alphaQuality: 100, effort: 6 })
     .toFile(output)
 
   postcard.image = publicPath
