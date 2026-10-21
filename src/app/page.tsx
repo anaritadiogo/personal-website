@@ -128,8 +128,8 @@ export default function Home() {
           }}
         >
           <motion.h1
-            className="mb-6 text-[clamp(3.5rem,10vw,8rem)] font-bold tracking-tight text-white italic leading-none"
-            style={{ fontFamily: 'var(--font-instrument-serif)' }}
+            className="text-[clamp(3.5rem,10vw,8rem)] font-bold tracking-tight text-white italic leading-none"
+            style={{ fontFamily: 'var(--font-instrument-serif)', marginBottom: '1.5rem' }}
             variants={{
               hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 16 },
               visible: { opacity: 1, y: 0, transition: { duration: prefersReducedMotion ? 0 : 0.65, ease: "easeOut" } },
