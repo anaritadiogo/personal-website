@@ -15,7 +15,7 @@ type ComingSoonPosition = {
 }
 
 export default function Home() {
-  const [isLeaving, setIsLeaving] = useState(false)
+  const [leavingTo, setLeavingTo] = useState<"/about" | "/postcards" | null>(null)
   const [comingSoonPosition, setComingSoonPosition] = useState<ComingSoonPosition | null>(null)
   const mounted = useSyncExternalStore(
     () => () => {},
@@ -51,24 +51,24 @@ export default function Home() {
     })
   }
 
-  const openPostcards = (event: MouseEvent<HTMLAnchorElement>) => {
+  const navigateWithTransition = (event: MouseEvent<HTMLAnchorElement>, destination: "/about" | "/postcards") => {
     event.preventDefault()
 
     if (prefersReducedMotion) {
-      router.push("/postcards")
+      router.push(destination)
       return
     }
 
-    setIsLeaving(true)
+    setLeavingTo(destination)
   }
 
   const pageContent = (
     <motion.div
       className="flex min-h-screen flex-col"
-      animate={isLeaving ? { opacity: 0, y: -16 } : { opacity: 1, y: 0 }}
+      animate={leavingTo ? { opacity: 0, y: -16 } : { opacity: 1, y: 0 }}
       transition={{ duration: prefersReducedMotion ? 0 : 0.45, ease: "easeInOut" }}
       onAnimationComplete={() => {
-        if (isLeaving) router.push("/postcards")
+        if (leavingTo) router.push(leavingTo)
       }}
     >
       <motion.div
@@ -86,12 +86,12 @@ export default function Home() {
         }}
       >
         <motion.div className="flex gap-6" variants={textReveal}>
-          <button id="about" onClick={showComingSoon} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>about</button>
+          <Link id="about" href="/about" onClick={(event) => navigateWithTransition(event, "/about")} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}>about</Link>
           <button id="projects" onClick={showComingSoon} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>projects</button>
         </motion.div>
         <motion.div className="flex gap-6" variants={textReveal}>
           <button id="photography" onClick={showComingSoon} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)' }}>photography</button>
-          <Link id="postcards" href="/postcards" onClick={openPostcards} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}>postcards</Link>
+          <Link id="postcards" href="/postcards" onClick={(event) => navigateWithTransition(event, "/postcards")} className="px-8 py-3 text-lg text-white border border-white" style={{ fontFamily: 'var(--font-jetbrains-mono)', color: 'white' }}>postcards</Link>
         </motion.div>
       </motion.div>
       {comingSoonPosition !== null && (
