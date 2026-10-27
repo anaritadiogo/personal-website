@@ -92,7 +92,7 @@ export function PostcardArtwork({ postcard, expanded = false }: { postcard: Post
       className="relative h-full w-full overflow-hidden"
       style={{
         aspectRatio: `${w} / ${h}`,
-        backgroundColor: postcard.image ? "#fff" : "var(--card-colour)",
+        backgroundColor: postcard.image ? "transparent" : "var(--card-colour)",
         backgroundImage: postcard.image ? "none" : "var(--card-gradient)",
       }}
     >
