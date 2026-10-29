@@ -28,8 +28,8 @@ function boxOf(element: HTMLElement): Box {
 }
 
 function centeredBox(): Box {
-  const maxWidth = Math.min(window.innerWidth * 0.9, 560)
-  const maxHeight = Math.min(window.innerHeight * 0.8, 640)
+  const maxWidth = Math.min(window.innerWidth * 0.9, 720)
+  const maxHeight = Math.min(window.innerHeight * 0.9, 800)
   const width = Math.min(maxWidth, maxHeight * 7 / 5)
   const height = width * 5 / 7
   return {

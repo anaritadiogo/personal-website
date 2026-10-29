@@ -196,9 +196,6 @@ export default function PostcardWall({
   hiddenCardCatalogue: number | null
 }) {
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE)
-  const [raisedCard, setRaisedCard] = useState<number | null>(null)
-  const [dragOffsets, setDragOffsets] = useState<Record<number, { x: number; y: number }>>({})
-  const draggedCardRef = useRef(false)
   const sentinelRef = useRef<HTMLDivElement>(null)
   const prefersReducedMotion = useReducedMotion()
   const visibleCards = useMemo(() => cards.slice(0, visibleCount), [cards, visibleCount])
@@ -240,61 +237,27 @@ export default function PostcardWall({
             const mobile = mobileRects[index]
             const style = cardStyle(desktop, mobile, postcard)
             const title = postcard.title || "untitled"
-            const dragOffset = dragOffsets[postcard.catalogue] ?? { x: 0, y: 0 }
 
             return (
               <motion.button
                 key={postcard.id}
                 type="button"
-                onClick={(event) => {
-                  if (draggedCardRef.current) {
-                    draggedCardRef.current = false
-                    event.preventDefault()
-                    event.stopPropagation()
-                    return
-                  }
-                  onSelect(postcard, event.currentTarget)
-                }}
-                onDragStart={() => {
-                  draggedCardRef.current = true
-                  setRaisedCard(postcard.catalogue)
-                }}
-                onDragEnd={(_, info) => {
-                  setDragOffsets((offsets) => {
-                    const previous = offsets[postcard.catalogue] ?? { x: 0, y: 0 }
-                    return {
-                      ...offsets,
-                      [postcard.catalogue]: {
-                        x: previous.x + info.offset.x,
-                        y: previous.y + info.offset.y,
-                      },
-                    }
-                  })
-                  window.setTimeout(() => {
-                    draggedCardRef.current = false
-                  }, 0)
-                }}
+                onClick={(event) => onSelect(postcard, event.currentTarget)}
                 className={`postcard-wall-card ${postcard.image ? "postcard-wall-card-image" : ""}`}
                 style={{
                   ...style,
-                  zIndex: raisedCard === postcard.catalogue ? 20 : undefined,
                   visibility: hiddenCardCatalogue === postcard.catalogue ? "hidden" : "visible",
                 }}
                 aria-label={`View postcard ${postcard.catalogue}: ${title}, ${postcard.location}`}
-                drag
-                dragConstraints={scrollRootRef}
-                dragElastic={1}
-                dragMomentum={false}
-                whileDrag={{ zIndex: 21 }}
                 initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 18 }}
-                animate={{ opacity: 1, ...dragOffset }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: prefersReducedMotion ? 0 : 0.65,
                   delay: prefersReducedMotion ? 0 : Math.min(index * 0.018, 0.7),
                   ease: "easeOut",
                 }}
                 whileHover={prefersReducedMotion ? undefined : {
-                  y: dragOffset.y - 7,
+                  y: -7,
                   zIndex: 10,
                   transition: { duration: 0.2 },
                 }}

@@ -217,17 +217,13 @@ button, a {
   background-image: var(--card-gradient);
   box-shadow: none;
   color: white;
-  cursor: grab;
+  cursor: pointer;
   text-align: left;
   transition: opacity 0.18s ease;
 }
 
 .postcard-wall-card-image {
   background: transparent;
-}
-
-.postcard-wall-card:active {
-  cursor: grabbing;
 }
 
 .postcard-wall-card:focus-visible {
@@ -243,8 +239,8 @@ button, a {
 
 .postcard-wall-label {
   position: absolute;
-  left: 5px;
-  max-width: calc(100% - 10px);
+  left: 8%;
+  max-width: 84%;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.12s ease;
@@ -252,10 +248,10 @@ button, a {
 
 .postcard-wall-number.drawably-circle {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8%;
+  left: 8%;
   display: inline-block;
-  max-width: calc(100% - 20px);
+  max-width: 84%;
   overflow: visible;
   color: #000;
   font-family: var(--font-jetbrains-mono);
@@ -269,12 +265,12 @@ button, a {
   position: absolute;
   top: auto;
   right: auto;
-  bottom: 5px;
-  left: 5px;
+  bottom: 8%;
+  left: 8%;
   display: block;
   width: max-content;
   height: auto;
-  max-width: calc(100% - 10px);
+  max-width: 84%;
   color: #000;
   font-family: var(--font-jetbrains-mono);
   font-size: 11px;
